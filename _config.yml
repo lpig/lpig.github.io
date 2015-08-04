@@ -6,7 +6,7 @@ markdown: rdiscount
 
 author: "lpig"
 atom-baseurl: "http://lpig.github.io"
-disqus: "gopherwood"
+#disqus: "gopherwood"
 
 navigations:
   - title: Archive
@@ -18,9 +18,9 @@ navigations:
   - title: About
     class: fa fa-user
     href: /about.html
-#  - title: Gallery
-#    class: fa fa-film
-#    href: http://foto.lhzhang.com
+  - title: Gallery
+    class: fa fa-film
+    href: http://zhang-junyi.squarespace.com
 #  - title: Subscribe
 #    class: fa fa-rss
 #    href: /atom.xml
