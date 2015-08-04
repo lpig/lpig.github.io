@@ -1,11 +1,27 @@
-# Site settings
-title: L_Pig's daily blog
-email: o55662000@yeah.net
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username: lpig
+markdown: rdiscount
+highlighter: pygments
+permalink: /:year/:month/:day/:title.html
+name: "rusty shutter"
+markdown: rdiscount
 
-# Build settings
-markdown: kramdown
-permalink: /:title
+author: "wayne"
+atom-baseurl: "http://lhzhang.com"
+disqus: "gopherwood"
+
+navigations:
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href: /about.html
+  - title: Gallery
+    class: fa fa-film
+    href: http://foto.lhzhang.com
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
+
