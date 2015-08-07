@@ -20,8 +20,9 @@ layout: default
   </section>
   <section class="post">
   {{ content }}
+  <div id="disqus_thread"></div>
   <!-- 多说评论框 start -->
-  <div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div>
+  <!-- <div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div> -->
   <!-- 多说评论框 end -->
   </section>
   {% if page.guid %}
