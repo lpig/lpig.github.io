@@ -2,8 +2,8 @@
 layout: post
 title:  "关于建立一个独立的个人博客"
 date:  2015-08-06  23:53
-tages:
-  - blog
+tags:
+  - github
   - self
 ---
 

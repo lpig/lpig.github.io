@@ -5,7 +5,7 @@ name: "lpig .Blog"
 markdown: rdiscount
 
 author: "lpig"
-atom-baseurl: "http://lpig.github.io"
+# atom-baseurl: "http://lpig.github.io"
 #disqus: "gopherwood"
 
 navigations:
