@@ -13,6 +13,7 @@ tags:
 
 - github （一个在全球很出名的代码管理平台
 - jekyll（一个简单的静态博客生成器
+- markdown
 - Strikingly（一个一键式网站生成平台，还有域名购买服务（P.S.选用
 
 关于github使用建议先去学习下git的操作，这里推荐[廖雪峰的git教学][1]或者[git官方的教学书git book][2]
@@ -37,9 +38,26 @@ tags:
     title:  "HelloWorld!!"
     date:  2015-08-04  10:41
     ---
-
+    
 这里说明下layout是这个文件使用的模板的样式名称，title就是博客标题，date就是日期时间还可以添加tags来添加标签。
+完成到这一步之后就已经是建立好一个自己的个人博客了。
 
+接下来就是购买域名和设置DNS解析了,关于域名的话网上会有很多不错的选择，我这里选的是Strikingly，他是一键轻松建站的一个平台，有兴趣的话可以去那边也建立一个玩一下，我用它搞了一个专门用来存放和展示图片的[网站][10]， 不过那些都只是题外话，为什么要用这个网站买域名呢？因为很便宜，只需要把账户升级为基本版或者专业版的账号并且是年费的话就会免费获得一个域名，而且只要一直购买年费账号的话就能一直拥有那个域名，价格的话买两年基本版的话每个月只需要7元。
+
+![此处输入图片的描述][11]
+
+在网站的设置里面会有一个注册新域名的选择，我这里因为已经获取过免费的域名所以这里是显示要每年24.95刀的价格，如果是开通年费账户的话这里是会写着赠送一个的。
+点击进去之后选好自己要的域名并且填好个人信息之后就可以设置DNS解析了。
+
+在设置解析之前要先在自己github pages的项目下建立一个"CNAME"的文件并且里面的内容填写自己的域名：
+![此处输入图片的描述][12]
+
+这个也弄好之后进入strikingly的账户信息里点击我的域名然后点击设置里的打开DNS设置就可以进入DNS解析的页面：
+![此处输入图片的描述][13]
+![此处输入图片的描述][14]
+如果不是很会弄DNS解析的话按照我的配置来设置就好，要注意的是类别要选择CNAME然后名称填写域名的开头，也就是子域名的地址，后面的值填写连接到自己的github pages的地址，最后点击保存就可以了。
+
+**弄到这里的话就可以真正的大功告成了！快去用markdown写一篇博客体验下吧！**
 
   [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
   [2]: https://git-scm.com/book/zh/v1
@@ -50,3 +68,8 @@ tags:
   [7]: http://jekyllthemes.org/
   [8]: http://jekyllcn.com/docs/configuration/
   [9]: http://www.jianshu.com/p/q81RER
+  [10]: http://photo.zjy-lpig.me
+  [11]: http://7xkxs2.com1.z0.glb.clouddn.com/CNAME.png
+  [12]: http://7xkxs2.com1.z0.glb.clouddn.com/cname.png
+  [13]: http://7xkxs2.com1.z0.glb.clouddn.com/NDS.png
+  [14]: http://7xkxs2.com1.z0.glb.clouddn.com/dns2.png
