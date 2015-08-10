@@ -3,20 +3,19 @@ title: about
 layout: page
 ---
 
-a
+**About Me**
 
-> Minimalist | Appleist | Unixer | Coder
+Linuxer|golang|C
 
-who involved in 
+**涉及领域**
 
-> [github](https://github.com/waynezhang)
+后端开发|嵌入式|运维
 
-mail 
+目前后端技能火速修炼中...（虽然喜欢golang，但是更热爱C
 
-> echo srvpqxfbyqfvpdtkbjwt | tr yxwvtsrqpkjfdb zuonmlihgeca@.
+嵌入式技能、运维缓慢进行中...
 
-or follow 
+Connect Me:
+>E-Mail:o55662000@yeah.net
 
-> [@o_lll](https://twitter.com/#!/o_lll)
-
-to reach me
+>QQ:404864087
