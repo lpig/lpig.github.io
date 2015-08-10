@@ -17,7 +17,7 @@ layout: page
 
 嵌入式技能、运维缓慢进行中...
 
-Connect Me:
+**Connect Me**
 >E-Mail:o55662000@yeah.net
 
 >QQ:404864087
