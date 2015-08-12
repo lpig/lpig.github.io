@@ -93,7 +93,7 @@ func selectDB(db *sql.DB) {
 }
 ```
 
-于是问题就解决了：
+那么问题就解决了：
 ![enter image description here](http://7xkxs2.com1.z0.glb.clouddn.com/sqlok.png)
 
 **随便一提的是，rows.Scan里面存放变量的顺序一定要和查的时候的顺序对应。**
