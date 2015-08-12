@@ -5,7 +5,7 @@ layout: page
 
 **ME**
 
->Linuxer|golang|C
+>Linuxer|Gopher|C
 
 **涉及领域**
 
