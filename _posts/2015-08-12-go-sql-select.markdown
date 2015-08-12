@@ -67,6 +67,7 @@ func selectDB(db *sql.DB) {
 这个代码咋看之下好像没有什么大的问题，而且SQL语句也可以查询，但是编译运行就报错了：
 ![enter image description here](http://7xkxs2.com1.z0.glb.clouddn.com/sqlerror.png)
 上面的意思是，select查出来有三个变量但是rows.Scan里面就只有一个变量来接受，所以编译就报错了，解决办法也是很简单，只要把查出来的东西都找变量装起来或者不要查那么多就好了。
+
 ```go
 func selectDB(db *sql.DB) {
 	rows, err := db.Query("select id,name from t_user")
@@ -91,7 +92,6 @@ func selectDB(db *sql.DB) {
 	}
 }
 ```
-
 
 于是问题就解决了：
 ![enter image description here](http://7xkxs2.com1.z0.glb.clouddn.com/sqlok.png)
