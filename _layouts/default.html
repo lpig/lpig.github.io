@@ -68,31 +68,5 @@ var _hmt = _hmt || [];
 <!--CNZZ-->
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256050207'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256050207' type='text/javascript'%3E%3C/script%3E"));</script>
 <!--CNZZ-->
-<div style="display:none;" class="back-to" id="toolBackTop">
-<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">
-返回顶部</a>
-</div>
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-        var bt = $('#toolBackTop');
-        var sw = $(document.body)[0].clientWidth;
-
-        var limitsw = (sw - 840) / 2 - 80;
-        if (limitsw > 0){
-                limitsw = parseInt(limitsw);
-                bt.css("right",limitsw);
-        }
-
-        $(window).scroll(function() {
-                var st = $(window).scrollTop();
-                if(st > 30){
-                        bt.show();
-                }else{
-                        bt.hide();
-                }
-        });
-})
-</script>
   </body>
 </html>
