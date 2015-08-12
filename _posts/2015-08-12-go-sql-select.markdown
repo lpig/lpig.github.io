@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "新手用go语言操控mysql数据库时可能遇到的问题"
 date:  2015-08-12  16:13
