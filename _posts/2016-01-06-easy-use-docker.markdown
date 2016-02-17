@@ -87,8 +87,8 @@ mac或者windows上使用docker的话要先安装一个linux的虚拟机，因�
 到这里为止docker的基本使用说明已经结束了，希望我这个普通的整理可以有帮助，以后会有以在docke里运行redis服务作为一个例子进行深入的记录。
 
 
-  [1]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/virtualization.png&e=1455684742&token=8M32NzrB22I0h1Lpjiny54mhdqPx6D-g1Os0X8IV:qjmPM8ik69JKz6P8aml0xCWKUPk
-  [2]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/docker.png&e=1455684743&token=8M32NzrB22I0h1Lpjiny54mhdqPx6D-g1Os0X8IV:8SkfJlB93QFewG1mdhp58rmBmuU
+  [1]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/virtualization.png
+  [2]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/docker.png
   [3]: https://hub.docker.com/
   [4]: https://github.com/docker/machine
   [5]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker%20machine%20ls.png
