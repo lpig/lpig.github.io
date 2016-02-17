@@ -7,7 +7,6 @@ tags:
   - note
 ---
 
-##tmux 使用笔记
 最近刚开始接触tmux..感觉上使用键盘来完成各种窗口新建以及各种切换操作的话会比使用鼠标更加的快捷。
 Linux安装:
 unbuit:```apt-get install tmux```
