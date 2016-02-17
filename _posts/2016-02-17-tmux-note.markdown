@@ -1,0 +1,150 @@
+---
+layout: post
+title:  "tmux使用笔记"
+date:  2016-02-17  13:03
+tags:
+  - tmux
+  - note
+---
+
+##tmux 使用笔记
+最近刚开始接触tmux..感觉上使用键盘来完成各种窗口新建以及各种切换操作的话会比使用鼠标更加的快捷。
+Linux安装:
+unbuit:```apt-get install tmux```
+
+mac安装:mac安装的话推荐使用Homebrew,用过了之后就发现回不去了，各种便捷跟新以及安装：[官网][1]，安装好之后就可以直接使用brew的命令了：
+```brew install tmux```
+
+目前我选择tmux的原因就是只有他可以在一个 terminal窗口下打开多个终端，不过tumx还有一个功能是保存当前工作台的环境,也就是说当你进入到了一个很深层的文件夹里面的时候，即使不小心退出了，再次进入tumx的时候还是可以打开回那个文件路径。
+
+###tmux命令说明：
+```
+tmux new[-session] -s name -d	新建会话(-d 是否在后台)
+tmux new -s name -n windowname	新建会话及窗口
+tmux at[tach] -t session	重新连接(-t 后接会话名称)
+tmux ls	显示保存的会话
+tmux kill-session -t session	删除会话
+```
+
+###基本窗口
+根据tmux的定义，在开启了tmux服务器后，会首先创建一个会话，而这个会话则会首先创建一个 窗口，其中仅包含一个面板；也就是说，这里看到的所谓终端控制台应该称作tmux的一个面板， 虽然其使用方法与终端控制台完全相同。
+
+tmux使用C/S模型构建，主要包括以下单元模块：
+
+ - server服务器。输入tmux命令时就开启了一个服务器。
+ - session会话。一个服务器可以包含多个会话
+ - window窗口。一个会话可以包含多个窗口。
+ - pane面板。一个窗口可以包含多个面板。
+
+###常用按键：
+下面的说有操作都需要激活了控制台才可以使用，默认的激活控制台快捷键为`Ctrl+b`，当然你可以在~/.tmux.conf里面修改自己的快捷键。
+```
+基本操作：
+
+?	列出所有快捷键；按q返回
+d	脱离当前会话,可暂时返回Shell界面，输入tmux attach能够重新进入之前会话
+s	选择并切换会话；在同时开启了多个会话时使用
+D	选择要脱离的会话；在同时开启了多个会话时使用
+:	进入命令行模式；此时可输入支持的命令，例如kill-server所有tmux会话
+[	复制模式，光标移动到复制内容位置，空格键开始，方向键选择复制，回车确认，q/Esc退出
+]	进入粘贴模式，粘贴之前复制的内容，按q/Esc退出
+~	列出提示信息缓存；其中包含了之前tmux返回的各种提示信息
+t	显示当前的时间
+Ctrl+z	挂起当前会话
+窗口操作:
+
+c	创建新窗口
+&	关闭当前窗口
+数字键	切换到指定窗口
+p	切换至上一窗口
+n	切换至下一窗口
+l	前后窗口间互相切换
+w	通过窗口列表切换窗口
+,	重命名当前窗口，便于识别
+.	修改当前窗口编号，相当于重新排序
+f	在所有窗口中查找关键词，便于窗口多了切换
+面板操作:
+
+“	将当前面板上下分屏
+%	将当前面板左右分屏
+x	关闭当前分屏
+!	将当前面板置于新窗口,即新建一个窗口,其中仅包含当前面板
+Ctrl+方向键	以1个单元格为单位移动边缘以调整当前面板大小
+Alt+方向键	以5个单元格为单位移动边缘以调整当前面板大小
+空格键	可以在默认面板布局中切换，试试就知道了
+q	显示面板编号
+o	选择当前窗口中下一个面板
+方向键	移动光标选择对应面板
+{	向前置换当前面板
+}	向后置换当前面板
+Alt+o	逆时针旋转当前窗口的面板
+Ctrl+o	顺时针旋转当前窗口的面板
+z	tmux 1.8新特性，最大化当前所在面板
+```
+
+###基本配置
+鉴于我才刚接触，还没有一个适合自己的配置，所以我这里贴一个在网上找的一个配置设置，使用过了一段时间之后觉得还是不错的。
+ 
+``` 
+# Set prefix key to Ctrl-a
+unbind-key C-b
+set-option -g prefix C-a
+bind-key C-a last-window # 方便切换，个人习惯
+bind-key a send-prefix
+
+#shell下的Ctrl+a切换到行首在此配置下失效，此处设置之后Ctrl+a再按a即可切换至shell行首
+
+# reload settings # 重新读取加载配置文件
+bind R source-file ~/.tmux.conf \; display-message "Config reloaded..."
+
+# Ctrl-Left/Right cycles thru windows (no prefix) 
+# 不使用prefix键，使用Ctrl和左右方向键方便切换窗口
+bind-key -n "C-Left" select-window -t :-
+bind-key -n "C-Right" select-window -t :+
+
+# displays 
+bind-key * list-clients
+
+set -g default-terminal "screen-256color"   # use 256 colors
+set -g display-time 5000                    # status line messages display
+set -g status-utf8 on                       # enable utf-8 
+set -g history-limit 100000                 # scrollback buffer n lines
+setw -g mode-keys vi                        # use vi mode
+
+# start window indexing at one instead of zero 使窗口从1开始，默认从0开始 
+set -g base-index 1
+
+# key bindings for horizontal and vertical panes
+unbind %
+bind | split-window -h      # 使用|竖屏，方便分屏
+unbind '"'
+bind - split-window -v      # 使用-横屏，方便分屏
+
+# window title string (uses statusbar variables)
+set -g set-titles-string '#T'
+
+# status bar with load and time 
+set -g status-bg blue
+set -g status-fg '#bbbbbb'
+set -g status-left-fg green
+set -g status-left-bg blue
+set -g status-right-fg green
+set -g status-right-bg blue
+set -g status-left-length 90
+set -g status-right-length 90
+set -g status-left '[#(whoami)]'
+set -g status-right '[#(date +" %m-%d %H:%M ")]'
+set -g status-justify "centre"
+set -g window-status-format '#I #W'
+set -g window-status-current-format ' #I #W '
+setw -g window-status-current-bg blue
+setw -g window-status-current-fg green
+
+# pane border colors
+set -g pane-active-border-fg '#55ff55'
+set -g pane-border-fg '#555555'
+```
+
+如果要配置文件生效，需要激活了控制台之后按:进入命令模式之后输入`source-file ~/.tmux.conf`即可。
+ 
+[1]:http://brew.sh/
