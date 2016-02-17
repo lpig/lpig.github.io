@@ -1,6 +1,8 @@
-# highlighter: pygments
+markdown: rdiscount
+highlighter: pygments
 permalink: /:year/:month/:day/:title.html
 name: "lpig .Blog"
+markdown: rdiscount
 
 author: "lpig"
 # atom-baseurl: "http://lpig.github.io"
