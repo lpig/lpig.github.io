@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "now is a test"
-date:  2015-08-12  16:13
+title:  "tmux使用笔记"
+date:  2016-02-17  14:06
 tags:
-  - golang
-  - mysql
+  - tmux
+  - note
 ---
 
 ##tmux 使用笔记
