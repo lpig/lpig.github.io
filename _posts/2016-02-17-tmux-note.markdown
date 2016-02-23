@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "tmux使用笔记"
-date:  2016-01-07  16:14
+date:  2016-02-17  16:14
 tags:
   - tmux
   - note
