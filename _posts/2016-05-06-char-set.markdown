@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "tmux使用笔记"
+date:  2016-05-06  18:15
+tags:
+  - ssh
+  - iTerm
+---
+
+###Mac用iTerm2连接到Linux，无法输入中文
+
+之前遇到了一个很奇怪的事情，公司的同事ssh到服务器上的时候都可以在终端里输入中文而我却不可以，但是在本地终端上是可以输入的。
+
+后来研究了一下发现是应为我用了`zsh`来代替默认的`bash`，并且使用了`oh-my-zsh`,因为默认的`.zshrc`里没有设置`utf-8`的编码，所以需要手动设置一下编码集，`zsh`在`.zshrc`里`bash`对应的是`.bash_profile`或`.bashrc`文件。
+
+在终端输入：
+```
+vim ~/.zshrc
+```
+
+然后在文件末尾添加：
+```
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+```
+
+然后重启终端或者输入`source ~/.zshrc`就可以生效。
+
+设置成功之后输入locale就会显示下面的内容：
+```
+LANG="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_ALL="en_US.UTF-8"
+```
+
+如果设置之后出现下面问题：
+`-bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)`
+
+解释：
+```
+The error "bash: warning: setlocale: LC_ALL: cannot change locale (en_US)" occurs when the remote server does not understand the locale "en_US.UTF-8". The fix is to generate the locale using the command "sudo locale-gen en_US.UTF-8" and update the locale repository to store this locale, such that future connections(ssh) can understand this locale. The command "sudo dpkg-reconfigure locales" updates the local repository with the newly generated locale, i.e en_US.UTF-8.
+```
+
+是因为没有安装这个编码的字符集，只需要安装一下就好了，如下：
+```
+sudo locale-gen en_US.UTF-8
+
+sudo dpkg-reconfigure locales
+```
