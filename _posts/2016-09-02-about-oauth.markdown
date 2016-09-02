@@ -62,10 +62,5 @@ oauth服务器->客户端:返回token
 
 openid和oauth区别:
 
-openid和oauth顺然都可以代表某个用户的信息，openid关注的是**用户是谁**，而oauth关注的是**用户能做什么**，一个比喻就是，openid等于一个人的身份证而oauth是代表一个人家里的门钥匙。可以参照[这里][1]。
-
-
-  [1]: http://cakebaker.42dh.com/2008/04/01/openid-versus-oauth-from-the-users-perspective/
-
-
+openid和oauth顺然都可以代表某个用户的信息，openid关注的是**用户是谁**，而oauth关注的是**用户能做什么**，一个比喻就是，openid等于一个人的身份证而oauth是代表一个人家里的门钥匙。
 
