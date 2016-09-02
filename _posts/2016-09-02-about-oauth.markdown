@@ -59,3 +59,6 @@ openid和oauth顺然都可以代表某个用户的信息，openid关注的是**�
 
 
   [1]: http://cakebaker.42dh.com/2008/04/01/openid-versus-oauth-from-the-users-perspective/
+
+
+
