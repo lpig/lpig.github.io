@@ -10,7 +10,6 @@ tags:
 
 使用场景:
 
-
     1:第三方登录
     2:第三方授权获取信息
 
@@ -39,28 +38,14 @@ oauth2的授权模式分为以下四种：
 
 授权流程图：
 
-
-
-```seq
-用户->客户端:打开
-客户端-->用户:重定向
-用户->oauth服务器:
-oauth服务器-->oauth服务器:校验key、secret、域名
-oauth服务器-->用户:重定向（带授权code）
-用户->客户端:
-客户端-->客户端:加密信息
-客户端->oauth服务器:获取token
-oauth服务器-->oauth服务器:校验
-oauth服务器->客户端:返回token
-```
-
-```seq
-
-```
+![Unknown.svg-13kB][1]
 
 小纪:
 
 openid和oauth区别:
 
-openid和oauth顺然都可以代表某个用户的信息，openid关注的是**用户是谁**，而oauth关注的是**用户能做什么**，一个比喻就是，openid等于一个人的身份证而oauth是代表一个人家里的门钥匙。
+openid和oauth顺然都可以代表某个用户的信息，openid关注的是**用户是谁**，而oauth关注的是**用户能做什么**，一个比喻就是，openid等于一个人的身份证而oauth是代表一个人家里的门钥匙。可以参照[这里][2]。
 
+
+  [1]: http://static.zybuluo.com/l404864087/tv8tnjrwxz7ur1fx2o46156c/Unknown.svg
+  [2]: http://cakebaker.42dh.com/2008/04/01/openid-versus-oauth-from-the-users-perspective/
