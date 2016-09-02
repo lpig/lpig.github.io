@@ -5,7 +5,7 @@ markdown: kramdown
 highlighter: rouge
 
 author: "lpig"
-atom-baseurl: "http://zjy-lpig.me/"
+atom-baseurl: "http://lpig.github.io/"
 disqus: "gopherwood"
 
 navigations:
