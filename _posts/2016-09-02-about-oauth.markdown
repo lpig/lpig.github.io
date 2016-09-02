@@ -40,7 +40,7 @@ oauth2的授权模式分为以下四种：
 
 ![Unknown.svg-13kB][1]
 
-小纪:
+小记:
 
 openid和oauth区别:
 
