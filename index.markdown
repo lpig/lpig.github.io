@@ -44,4 +44,4 @@ layout: default
     <li class="listing-seperator"><a href="/archive.html">Long Time ago</a></li>
   </ul>
 </div>
-<img src="upyun_logo.png" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+<img src="upyun_logo.png" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" style="height: 84px;">
