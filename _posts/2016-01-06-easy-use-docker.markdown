@@ -87,16 +87,15 @@ mac或者windows上使用docker的话要先安装一个linux的虚拟机，因�
 
 到这里为止docker的基本使用说明已经结束了，希望我这个普通的整理可以有帮助，以后会有以在docke里运行redis服务作为一个例子进行深入的记录。
 
-
-  [1]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/virtualization.png
-  [2]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/docler/docker.png
+  [1]: lpig-blog.test.upcdn.net/markdown/2018/10/12/virtualization.png
+  [2]: lpig-blog.test.upcdn.net/markdown/2018/10/12/docker.png
   [3]: https://hub.docker.com/
   [4]: https://github.com/docker/machine
-  [5]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker%20machine%20ls.png
-  [6]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-machine-start.png
-  [7]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-machine-env.png
-  [8]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-machine-ssh.png
-  [9]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-run.png
-  [10]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-run2.png
-  [11]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-images.png
-  [12]: http://7xkxs2.com1.z0.glb.clouddn.com/blog/dockerdocker-ps.png
+  [5]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker machine ls.png
+  [6]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-start.png
+  [7]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-env.png
+  [8]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-ssh.png
+  [9]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-run.png
+  [10]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-run2.png
+  [11]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-images.png
+  [12]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-ps.png
