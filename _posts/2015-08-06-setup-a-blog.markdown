@@ -38,7 +38,7 @@ tags:
     title:  "HelloWorld!!"
     date:  2015-08-04  10:41
     ---
-    
+
 这里说明下layout是这个文件使用的模板的样式名称，title就是博客标题，date就是日期时间还可以添加tags来添加标签。
 完成到这一步之后就已经是建立好一个自己的个人博客了。
 
@@ -62,14 +62,15 @@ tags:
   [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
   [2]: https://git-scm.com/book/zh/v1
   [3]: https://pages.github.com/
-  [4]: http://7xkxs2.com1.z0.glb.clouddn.com/add.png
-  [5]: http://7xkxs2.com1.z0.glb.clouddn.com/create.png
+  [4]: lpig-blog.test.upcdn.net/markdown/2018/10/12/add.png
+  [5]: lpig-blog.test.upcdn.net/markdown/2018/10/12/create.png
   [6]: http://jekyllcn.com/docs/installation/
   [7]: http://jekyllthemes.org/
   [8]: http://jekyllcn.com/docs/configuration/
   [9]: http://www.jianshu.com/p/q81RER
   [10]: http://photo.zjy-lpig.me
-  [11]: http://7xkxs2.com1.z0.glb.clouddn.com/CNAME.png
-  [12]: http://7xkxs2.com1.z0.glb.clouddn.com/cname.png
-  [13]: http://7xkxs2.com1.z0.glb.clouddn.com/NDS.png
-  [14]: http://7xkxs2.com1.z0.glb.clouddn.com/dns2.png
+  [11]: lpig-blog.test.upcdn.net/markdown/2018/10/12/CNAME.png
+  [12]: lpig-blog.test.upcdn.net/markdown/2018/10/12/cname -1-.png
+  [13]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dns.png
+  [14]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dns2.png
+
