@@ -62,15 +62,15 @@ tags:
   [1]: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
   [2]: https://git-scm.com/book/zh/v1
   [3]: https://pages.github.com/
-  [4]: lpig-blog.test.upcdn.net/markdown/2018/10/12/add.png
-  [5]: lpig-blog.test.upcdn.net/markdown/2018/10/12/create.png
+  [4]: blog-fs.itlib.club/blog/2019/05/07/add.png
+  [5]: blog-fs.itlib.club/blog/2019/05/07/create.png
   [6]: http://jekyllcn.com/docs/installation/
   [7]: http://jekyllthemes.org/
   [8]: http://jekyllcn.com/docs/configuration/
   [9]: http://www.jianshu.com/p/q81RER
   [10]: http://photo.zjy-lpig.me
-  [11]: lpig-blog.test.upcdn.net/markdown/2018/10/12/CNAME.png
-  [12]: lpig-blog.test.upcdn.net/markdown/2018/10/12/cname -1-.png
-  [13]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dns.png
-  [14]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dns2.png
+  [11]: blog-fs.itlib.club/blog/2019/05/07/CNAME.png
+  [12]: blog-fs.itlib.club/blog/2019/05/07/cname -1-.png
+  [13]: blog-fs.itlib.club/blog/2019/05/07/dns.png
+  [14]: blog-fs.itlib.club/blog/2019/05/07/dns2.png
 

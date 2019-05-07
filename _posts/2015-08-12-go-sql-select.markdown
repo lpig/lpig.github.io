@@ -65,7 +65,7 @@ func selectDB(db *sql.DB) {
 ```
 
 这个代码咋看之下好像没有什么大的问题，而且SQL语句也可以查询，但是编译运行就报错了：
-![sqlerro](lpig-blog.test.upcdn.net/markdown/2018/10/12/sqlerror.png)
+![sqlerro](blog-fs.itlib.club/blog/2019/05/07/sqlerror.png)
 上面的意思是，select查出来有三个变量但是rows.Scan里面就只有一个变量来接受，所以编译就报错了，解决办法也是很简单，只要把查出来的东西都找变量装起来或者不要查那么多就好了。
 
 ```go
@@ -94,6 +94,6 @@ func selectDB(db *sql.DB) {
 ```
 
 那么问题就解决了：
-![enter image description here](lpig-blog.test.upcdn.net/markdown/2018/10/12/sqlok.png)
+![enter image description here](blog-fs.itlib.club/blog/2019/05/07/sqlok.png)
 
 **随便一提的是，rows.Scan里面存放变量的顺序一定要和查的时候的顺序对应。**

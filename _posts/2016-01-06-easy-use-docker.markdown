@@ -87,15 +87,18 @@ mac或者windows上使用docker的话要先安装一个linux的虚拟机，因�
 
 到这里为止docker的基本使用说明已经结束了，希望我这个普通的整理可以有帮助，以后会有以在docke里运行redis服务作为一个例子进行深入的记录。
 
-  [1]: lpig-blog.test.upcdn.net/markdown/2018/10/12/virtualization.png
-  [2]: lpig-blog.test.upcdn.net/markdown/2018/10/12/docker.png
+  [1]: blog-fs.itlib.club/blog/2019/05/07/virtualization.png
+  [2]: blog-fs.itlib.club/blog/2019/05/07/docker.png
   [3]: https://hub.docker.com/
   [4]: https://github.com/docker/machine
-  [5]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker machine ls.png
-  [6]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-start.png
-  [7]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-env.png
-  [8]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-machine-ssh.png
-  [9]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-run.png
-  [10]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-run2.png
-  [11]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-images.png
-  [12]: lpig-blog.test.upcdn.net/markdown/2018/10/12/dockerdocker-ps.png
+  [5]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker machine ls.png
+  [6]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-machine-start.png
+  [7]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-machine-env.png
+  [8]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-machine-ssh.png
+  [9]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-run.png
+  [10]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-run2.png
+  [11]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-images.png
+  [12]: blog-fs.itlib.club/blog/2019/05/07/dockerdocker-ps.png
+
+
+
